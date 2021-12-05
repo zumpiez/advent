@@ -1,5 +1,5 @@
 async function GetInputs():Promise<number[]> {
-  const input = await Deno.readTextFile("input/1-1.txt");
+  const input = await Deno.readTextFile("input/1.txt");
   return input.split('\n').map((num:string) => parseInt(num))
 }
 
